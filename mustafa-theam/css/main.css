@@ -1,0 +1,722 @@
+.emptyTopArea {
+  margin: 10px;
+}
+
+/* Start Main Rules */
+
+body {
+  background-color: #eee;
+}
+
+/* End Main Rules */
+
+/* Start Bootstrap Rules */
+
+.navbar {
+  background-color: #02111b;
+}
+
+.navbar a {
+  color: #eee;
+}
+
+.navbar a:hover {
+  color: #3f73ab;
+}
+
+.navbar-brand {
+  margin-left: 50px;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+/* .navbar li {
+  color: #eee;
+  margin-left: 20px !important;
+} */
+
+/* .navbar li {
+  margin-left: 50px;
+} */
+
+/* End Bootstrap Rules */
+
+/* Start main-post card */
+
+.home-page .main-post {
+  margin-top: 28px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  margin-bottom: -5px;
+}
+
+.home-page .main-post .title {
+  color: #3f73ab;
+  text-decoration: none;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.home-page .main-post .title:hover {
+  color: #a19fa2;
+}
+
+.home-page .main-post .post-auther,
+.home-page .main-post .post-date,
+.home-page .main-post .post-comments {
+  font-size: 13px;
+  color: #02111b;
+}
+
+.home-page .main-post .icone,
+.home-page .main-post .pipe {
+  color: #bab9bb;
+}
+
+.home-page .post-auther a,
+.home-page .post-comments a,
+.home-page .post-categories a,
+.home-page .post-tags a {
+  color: #3f73ab;
+  text-decoration: none;
+}
+
+.home-page .main-post img {
+  display: block;
+  margin: 10px 0 10px;
+}
+
+.home-page .main-post .post-content {
+  line-height: 1.6;
+  color: #666;
+}
+
+.home-page .post-categories {
+  color: #a19fa2;
+}
+
+.home-page .post-pagination {
+  margin: 30px auto 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.home-page .post-pagination a,
+.home-page .post-pagination span {
+  color: #3f73ab;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.home-page .post-pagination a:hover {
+  background-color: #3f73ab;
+  color: #eeeeee;
+}
+
+.home-page .post-pagination a:first-child,
+.home-page .post-pagination span:first-child {
+  float: left;
+  /* margin-left: 15px; */
+}
+
+.home-page .post-pagination a:last-child,
+.home-page .post-pagination span:last-child {
+  float: right;
+  /* margin-right: 15px; */
+}
+
+.home-page .post-pagination span {
+  opacity: 0.5;
+  color: #666;
+  cursor: context-menu;
+}
+
+.home-page .post-pagination .previous-span {
+  margin-right: 10px;
+}
+
+.home-page .post-pagination .next-span {
+  margin-left: 10px;
+}
+
+.home-page .post-pagination .fa-chevron-left {
+  margin-right: 10px;
+}
+
+.home-page .post-pagination .fa-chevron-right {
+  margin-left: 10px;
+}
+
+/* End main-post card */
+
+/* Start Single Page */
+
+.post-page .main-post {
+  position: relative;
+  margin-top: 28px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  margin-bottom: -5px;
+}
+
+.post-page .main-post .title {
+  color: #3f73ab;
+  text-decoration: none;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.post-page .main-post .title:hover {
+  color: #a19fa2;
+}
+
+.post-page .main-post .post-auther,
+.post-page .main-post .post-date,
+.post-page .main-post .post-comments {
+  font-size: 14px;
+  color: #02111b;
+}
+
+.post-page .main-post .icone,
+.post-page .main-post .pipe {
+  color: #bab9bb;
+}
+
+.post-page .post-auther a,
+.post-page .post-comments a,
+.post-page .post-categories a,
+.post-page .post-tags a {
+  color: #3f73ab;
+  text-decoration: none;
+}
+
+.post-page .main-post img {
+  display: block;
+  margin: 10px 0 10px;
+}
+
+.post-page .main-post .post-content {
+  line-height: 1.8;
+  color: #666;
+}
+
+.post-page .post-categories {
+  color: #a19fa2;
+}
+
+.post-page .post-pagination {
+  margin: 30px auto 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.post-page .post-pagination a,
+.post-page .post-pagination span {
+  color: #3f73ab;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.post-page .post-pagination a:hover {
+  background-color: #3f73ab;
+  color: #eeeeee;
+}
+
+.post-page .post-pagination a:first-child,
+.post-page .post-pagination span:first-child {
+  float: left;
+}
+
+.post-page .post-pagination a:last-child,
+.post-page .post-pagination span:last-child {
+  float: right;
+}
+
+.post-page .post-pagination span {
+  opacity: 0.5;
+  color: #666;
+  cursor: context-menu;
+}
+
+.post-page .post-pagination .previous-span {
+  margin-left: 10px;
+}
+
+.post-page .post-pagination .next-span {
+  margin-right: 10px;
+}
+
+.post-page .post-pagination .fa-chevron-left {
+  margin-right: 10px;
+}
+
+.post-page .post-pagination .fa-chevron-right {
+  margin-left: 10px;
+}
+
+/* End single post */
+
+/* .emptyBottomArea {
+  margin: 55px;
+} */
+
+/* Start footer style */
+
+.footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #eee;
+  background-color: #02111b;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* End footer style */
+
+/* Start post edit */
+
+.single-post .post-edit-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 0 0 0 10px;
+}
+
+.single-post .post-edit-link i {
+  color: #337ab7;
+  margin-left: 5px;
+}
+
+/* End post edit */
+
+/* Start author Image */
+
+.col-md-2 .avatar {
+  margin-top: 35px;
+  display: block;
+  margin-bottom: 35px;
+}
+
+.author-info {
+  margin-top: 55px;
+  margin-left: -50px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.author-info h4 {
+  color: #3b3d3f;
+}
+
+.author-info a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.author-info a:hover {
+  text-decoration: underline;
+}
+
+.author-info .author-description {
+  color: #666;
+}
+
+.author-link a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.author-link a:hover {
+  text-decoration: underline;
+}
+
+.author-stats i {
+  color: #337ab7;
+}
+
+/* End author Image */
+
+/* Start Comments list  */
+
+.comments-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comments-count,
+.last-posts,
+.last-comments {
+  padding: 20px;
+  /* margin: 20px auto; */
+  background-color: #e2e2e2;
+  font-size: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #909090;
+  border: 1px solid #dedede;
+  width: 100%;
+}
+
+.last-comments {
+  margin-top: 20px;
+}
+
+/* last-posts */
+
+/* last-post link */
+.last-posts a {
+  color: #909090;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+.comments-list .comment .says {
+  display: none;
+}
+
+.comments-list .comment img {
+  padding: 3px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin: 0 5px 5px 0;
+}
+
+/* fix a tag - without a */
+.comments-list .comment .comment-meta a {
+  font-size: 12px;
+  margin: 3px auto;
+  color: #3f73ab;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+.comments-list .comment p {
+  margin-top: 8px;
+  color: #6f6f6f;
+}
+
+.comments-list .comment .reply a {
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #eeeeee;
+  border: 1px solid #ddd;
+  padding: 7px 10px 12px 10px;
+  /* chrome 12 - firefox 11 */
+  outline: none;
+  border-radius: 2px;
+}
+
+.comments-list > .comment {
+  /* Level 1 Selector */
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.comments-list > .comment > .children > .comment {
+  /* Level 2 Selector */
+  padding: 10px;
+  background-color: #eee;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+.comments-list > .comment > .children > .comment .reply a {
+  /* reply color 2 */
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 7px 10px 12px 10px;
+  /* chrome 12 - firefox 11 */
+  outline: none;
+  border-radius: 2px;
+}
+
+.comments-list > .comment > .children > .comment .comment {
+  /* Level 3 Selector */
+  padding: 10px;
+  background-color: #ddd;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+}
+
+.comments-list > .comment > .children > .comment .comment .reply a {
+  /* reply color 3 */
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #aaa;
+  padding: 7px 10px 12px 10px;
+  /* chrome 12 - firefox 11 */
+  outline: none;
+  border-radius: 2px;
+}
+
+.logged-in-as a {
+  color: #3f73ab;
+  text-decoration: none;
+}
+
+.logged-in-as a:hover {
+  text-decoration: underline;
+}
+
+.comment-respond input[type='text'],
+.comment-respond textarea {
+  height: 40px;
+  width: 500px;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #6f6f6f;
+  border-radius: 5px;
+}
+
+.comment-respond textarea {
+  height: 200px;
+  resize: none;
+}
+
+.comment-form-cookies-consent label {
+  position: relative;
+  top: -24px;
+  left: 24px;
+}
+
+/* .comment-notes {
+  display: none;
+} */
+
+.not-be-published {
+  color: #a19fa2;
+}
+
+.comment-respond .comment-reply-title {
+  color: #909090;
+  background-color: #e2e2e2;
+  padding: 20px;
+  text-align: center;
+  opacity: 0.8;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.comment-form {
+  background-color: #e2e2e2;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.form-group textarea {
+  margin-bottom: 35px;
+  border: 1px solid #ced4da;
+}
+
+.comment-form-cookies-consent {
+  display: none;
+}
+
+.form-group label {
+  /* comment */
+  margin: 5px;
+}
+
+.comment-reply-title a {
+  /* Replay To [] -cancel reply */
+  font-size: 20px;
+  text-decoration: none;
+  color: #337ab7;
+}
+
+/* End Comments list  */
+
+/* Start Author Page */
+
+.author-page .profile-header {
+  font-size: 50px;
+  margin: 30px 0;
+  font-weight: bold;
+  letter-spacing: -3px;
+  color: #02111b;
+  text-align: center;
+}
+
+.author-page .profile-header a {
+  color: #02111b;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+.author-page .aurhor-main-info {
+  background-color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dedede;
+  margin-bottom: 20px;
+}
+
+.aurhor-main-info li,
+.col-md-9 .author-description {
+  /* discription change color not working */
+  color: #777;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.aurhor-main-info a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.aurhor-main-info a:hover {
+  text-decoration: underline;
+}
+
+.author-page .author-stats .stats {
+  background-color: #fff;
+  padding: 25px;
+  font-size: 14px;
+  border: 1px solid #dedede;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* .author-page .author-stats .stats p {
+  font-size: 50px;
+} */
+
+.author-page .author-stats .stats span {
+  display: block;
+  font-size: 50px;
+  margin-top: 10px;
+  color: #646464;
+}
+
+/* author posts */
+
+.author-posts .row {
+  background-color: #fff;
+  margin: 20px 0 10px 0;
+  padding: 20px 10px;
+  border: 1px solid #dedede;
+}
+
+.author-details {
+  margin-top: 20px;
+}
+
+.author-details .title {
+  color: #3f73ab;
+  text-decoration: none;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.author-details .title:hover {
+  color: #a19fa2;
+}
+
+.author-details .post-date,
+.author-details .post-auther,
+.author-details .post-comments {
+  font-size: 13px;
+  color: #02111b;
+}
+
+.author-details .icone,
+.author-details .pipe {
+  color: #bab9bb;
+}
+
+.author-details .post-auther a,
+.author-details .post-comments a,
+.author-details .post-categories a,
+.author-details .post-tags a {
+  color: #3f73ab;
+  text-decoration: none;
+}
+
+.author-details .post-content {
+  line-height: 1.6;
+  color: #666;
+}
+
+.author-img img {
+  width: 95%;
+  /* width: 150px;
+  height: 120px; */
+  vertical-align: top;
+}
+
+/* .author-img img:hover {
+  opacity: 0.4;
+} */
+
+.last-comments-counts {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #dedede;
+  font-size: 20px;
+  color: #909090;
+  background-color: #e2e2e2;
+  font-weight: bold;
+}
+
+.last-author-comments {
+  background-color: #fff;
+  margin: 20px 0 10px 0;
+  padding: 20px 10px;
+  border: 1px solid #dedede;
+}
+
+.last-author-comments .comments-links {
+  color: #3f73ab;
+  text-decoration: none;
+  margin: 0 0 10px 0;
+  letter-spacing: -1px;
+  font-size: 24px;
+}
+
+.comment-simple {
+  margin: 0 0 0 7px;
+  color: #3b3d3f;
+}
+
+.latest-author-comment-date {
+  font-size: 14px;
+
+  color: #bab9bb;
+}
+
+/* End Author Page */
