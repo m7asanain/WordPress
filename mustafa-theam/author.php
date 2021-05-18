@@ -126,7 +126,7 @@
 
                 // comments
 
-                $latest_author_comments = 2; //4
+                $latest_author_comments = 4; //4
 
                 $author_comments_arguments = array(
                     'user_id'       => get_the_author_meta('ID'),
@@ -138,10 +138,12 @@
 
                 $comments = get_comments($author_comments_arguments);
 
-                if ($comments > 4) {
-                    ?>
-                        <p class="last-comments-counts">Last 4 Comments <?php the_author_meta('nickname')?> has commented</p>
-                    <?php
+                if (get_comments($author_comments_arguments) <= $latest_author_comments) {
+                    echo 'Last Comments of ';
+                    the_author_meta('nickname');
+                } else {
+                    echo 'Last ' . $latest_author_comments . ' Comments of ';
+                    the_author_meta('nickname');
                 }
 
                 if ($comments) {
@@ -157,7 +159,6 @@
                                 <i class="fa fa-calendar fa-fw icone"></i>
                                 <?php  echo '<span class=comment-date>' . get_comment_date( '', $comment ) . '</span>'; ?>
                             </div>
-                            <br>
                             <p class="comment-simple"><?php echo $comment->comment_content; ?></p>
                         </div>
     
