@@ -46,7 +46,7 @@ body {
 /* Start main-post card */
 
 .home-page .main-post {
-  margin-top: 28px;
+  margin-top: 20px; /* 28px */
   padding: 10px;
   background-color: #fff;
   border: 1px solid #d8d8d8;
@@ -217,6 +217,33 @@ body {
   color: #a19fa2;
 }
 
+.rendom-categorie-posts {
+  padding: 20px;
+  /* margin: 20px auto; */
+  background-color: #e2e2e2;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #909090;
+  border: 1px solid #dedede;
+  width: 100%;
+}
+
+.random-posts {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.random-posts .random-posts-title a {
+  text-decoration: none;
+  color: #3f73ab;
+}
+
+.random-posts .random-posts-title a:hover {
+  color: #666;
+}
+
 .post-page .post-pagination {
   margin: 30px auto 100px;
   width: 100%;
@@ -290,6 +317,19 @@ body {
   color: #eee;
   background-color: #02111b;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer404 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #eee;
+  background-color: #02111b;
+  /* height: -20px; */
+  padding: 2px;
   display: flex;
   justify-content: center;
 }
@@ -385,6 +425,13 @@ body {
 
 .last-comments {
   margin-top: 20px;
+}
+
+.last-comments a {
+  color: #909090;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
 }
 
 /* last-posts */
@@ -708,6 +755,10 @@ body {
   font-size: 24px;
 }
 
+.last-author-comments .comments-links:hover {
+  text-decoration: underline;
+}
+
 .comment-simple {
   margin: 0 0 0 7px;
   color: #3b3d3f;
@@ -720,3 +771,168 @@ body {
 }
 
 /* End Author Page */
+
+/* .numbering-pagination {
+  margin: 20px 0;
+  font-family: Tahoma, Arial;
+  font-size: 16px;
+} */
+
+.numbering-pagination {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+  margin: 30px;
+}
+
+.pagination a,
+.pagination span {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active,
+.pagination span {
+  background-color: #3f73ab;
+  color: white;
+  border: 1px solid #325d8b;
+}
+
+.pagination a:hover:not(.active) {
+  color: #fff;
+  background-color: #3f73ab;
+}
+
+/* Start 404 */
+
+.white-background {
+  background-color: #f9fafc;
+}
+
+.page-not-found h1 {
+  color: #ff3725;
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: -30px;
+}
+
+.page-not-found p {
+  color: #052858;
+  margin: 25px 0px;
+  font-size: 25px;
+}
+
+/* End 404 */
+
+.comment-author,
+.comment-author a {
+  color: #3f73ab;
+  text-decoration: none;
+  content: '&#9733';
+}
+
+/* category start */
+
+.linux-category .category-post-content {
+  margin-top: 35px;
+}
+
+.linux-category .post-title {
+  margin-bottom: 10px;
+}
+
+.linux-category .post-content {
+  margin-top: 15px;
+}
+
+.category-information {
+  background-color: #e2e2e2;
+  color: #777777;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+/* Sidebar */
+
+.sidebar-linux {
+}
+
+.sidebar-linux .widget {
+  margin-top: 27px;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+}
+
+.sidebar-linux .widget-title {
+  /* background-color: #325d8b; */
+}
+
+.sidebar-linux .widget-content {
+  margin: 10px 0;
+}
+
+/* category end */
+
+/* start linux side bar */
+
+.latest_posts_sidebar a {
+  text-decoration: none;
+  color: #3f73ab;
+  font-weight: bold;
+}
+
+.latest_pho_posts_sidebar a:hover {
+  color: #666;
+}
+
+/* .third-widget ul {
+  list-style-type: none;
+  margin-right: 20px;
+} */
+
+.third-widget a {
+  margin-left: 10px;
+}
+
+/* end linux side bar */
+
+/* Start breadcrumb */
+
+.breadcrumbs-holder {
+  background-color: #ffffff;
+  padding: 7px;
+  margin-top: 5px;
+}
+
+.breadcrumb-spacing {
+  margin-right: 5px;
+}
+
+.breadcrumb a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #666;
+}
+
+.breadcrumb li {
+  font-size: 17px;
+}
+
+.breadcrumb .active {
+  color: #6f6f6f;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* End breadcrumb */

@@ -89,7 +89,9 @@
     function mustafa_extend_excerpt_length($length) {
         if (is_author()) {
             return 40;
-        } else {
+        } else if(is_category()) {
+            return 60;
+        }else {
             return 80;
         }
     }
@@ -111,5 +113,53 @@
     add_action('wp_enqueue_scripts', 'mustafa_add_scripts');
     add_action('wp_enqueue_scripts', 'mustafa_add_styles');
     add_action('init', 'mustafa_register_custome_menu');
+
+    // Numbering Pagination
+
+    function numbering_pagination() {
+        global $wp_query;       // make wp_query global
+        $all_pages = $wp_query->max_num_pages;      // get all pages
+        $current_page = max(1, get_query_var('paged'));     // get currnt page
+
+        if ($all_pages > 1) {
+            return paginate_links(array(
+                'base'      => get_pagenum_link() . '%_%',
+                'format'    => 'page/%#%',
+                'current'   =>  $current_page,
+                'mid_size'  => 1,
+                'end_size'  => 2,
+                'prev_text' => '«',
+                'next_text' => '»',
+            ));
+        }
+    }
+
+    // resgister sidebar
+
+    function mustafa_main_sidebar() {
+        // resgister main sidebar
+        register_sidebar(array(
+            'name'          => 'Main Sidebar',
+            'id'            => 'main-sidebar',
+            'description'   => 'Main Sidebar Appear Everywhere',
+            'class'         => 'main-sidebar',
+            'before_widget' => '<div class="widget-content">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        ));
+    }
+
+    add_action('widgets_init', 'mustafa_main_sidebar');
+
+    // remove paragraph element from posts
+    // it's not working
+
+    function mustafa_remove_paragraph($content) {
+        remove_filter('the_content', 'wpautop');
+        return $content;
+    }
+
+    add_filter('the_content', 'mustafa_remove_paragraph');
 
 ?>

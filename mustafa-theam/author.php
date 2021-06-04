@@ -67,10 +67,13 @@
                 </div>
             </div>
         </div>
+        
         <div class="row">
+            <div class="clearfix"></div>
+
             <?php
 
-                $latest_author_post = 2;    //4
+                $latest_author_post = 4;
 
                 $author_posts_arguments = array(
                     'author' => get_the_author_meta('ID'),
@@ -126,7 +129,7 @@
 
                 // comments
 
-                $latest_author_comments = 4; //4
+                $latest_author_comments = 4;
 
                 $author_comments_arguments = array(
                     'user_id'       => get_the_author_meta('ID'),
@@ -138,13 +141,12 @@
 
                 $comments = get_comments($author_comments_arguments);
 
-                if (get_comments($author_comments_arguments) <= $latest_author_comments) {
-                    echo 'Last Comments of ';
-                    the_author_meta('nickname');
-                } else {
-                    echo 'Last ' . $latest_author_comments . ' Comments of ';
-                    the_author_meta('nickname');
-                }
+                if (get_comments($commentscount_arguments) >= $latest_author_comments) { ?>
+                    <h4 class="last-comments">Latest <?php echo $latest_author_comments?> comments <?php echo the_author_posts_link() ?> has commented</h4>
+                    <!-- echo ' ' . $latest_author_comments . ' '; -->
+                <?php } else { ?>
+                    <h4 class="last-comments">Latest comments <?php echo the_author_posts_link() ?> has commented</h4>
+                <?php }
 
                 if ($comments) {
 
@@ -157,19 +159,17 @@
                             <br>
                             <div class="latest-author-comment-date">
                                 <i class="fa fa-calendar fa-fw icone"></i>
-                                <?php  echo '<span class=comment-date>' . get_comment_date( '', $comment ) . '</span>'; ?>
+                                <span>Commented on:</span>
+                                <?php  echo '<span class=comment-date>' . get_comment_date( 'l jS \of F Y' ) . '</span>'; ?>
                             </div>
                             <p class="comment-simple"><?php echo $comment->comment_content; ?></p>
                         </div>
     
                     <?php }
 
-                } else {
-                    echo 'This admin has comment on any post!';
-                }
-
-                // echo $comment->comment_post_ID . "<br>";
-
+                } else { ?>
+                    <h4 class="last-comments"><?php echo the_author_posts_link(); ?> has comment on any post!</h4>
+                <?php } 
             ?>
         </div> 
     </div>

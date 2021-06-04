@@ -1,6 +1,11 @@
-<?php get_header(); ?>
+<?php 
 
-<div class="emptyTopArea"></div>
+    get_header(); 
+    include(get_template_directory() . '/includes/breadcrumb.php');
+
+?>
+
+<!-- <div class="emptyTopArea"></div> -->
 
 <div class="container post-page">
     <?php
@@ -55,7 +60,51 @@
             'class' => 'img-responsive img-thumbnail center-block'
         );
 
+        
+        // get id                => global $post;   $post->ID . '<br>';
+        // get post id           => get_queried_object_id()
+        // get categorise id     => wp_get_post_categories( get_queried_object_id() )
+
+        // error: comments complex in random posts
+
     ?>
+
+        <h4 class="rendom-categorie-posts">Random posts from same categorie</h4>
+
+    <?php
+
+
+        $random_posts_arguments = array(
+            'posts_per_page'        => 3,  // 5
+            'orderby'               => 'rand',
+            'category__in'          => wp_get_post_categories(get_queried_object_id()),
+            'post__not_in'          => array(get_queried_object_id())
+        );
+
+        $random_posts = new WP_Query($random_posts_arguments);
+
+        if ($random_posts->have_posts()) {
+            while ($random_posts-> have_posts()) {
+                $random_posts-> the_post(); ?>
+                <div class="random-posts">
+                    <h3 class="random-posts-title">
+                        <a class="title" href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </h3>
+                    <hr>
+                </div>
+                <?php
+            }
+            wp_reset_postdata();
+        } else {
+            echo 'there is no related post in this categories';
+        }
+
+    ?>
+
+    <hr>
+
     <div class="row">
         <div class="col-md-2">
             <?php
@@ -82,6 +131,7 @@
             <i class="fas fa-home"></i> Visit User Profile Page  <span class="author-link"><?php echo the_author_posts_link(); ?></span>
         </p>
     </div>
+
     <?php
         echo '<div class="post-pagination ">';
 
@@ -102,7 +152,6 @@
         echo '<hr class="comments-separator">';
 
         comments_template();
-
     ?>
 </div>
 

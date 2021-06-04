@@ -4,6 +4,14 @@
 
 <div class="container home-page">
     <div class="row">
+        <div class="text-center category-information">
+            <h1 class="catergory-title"><?php single_cat_title() ?></h1>
+            <p class="category-description"><?php echo category_description() ?></p>
+            <div class="category-stats">
+                <span>Post Counts: 20</span> |
+                <span>Comments Count:</span>
+            </div>
+        </div>
         <?php
             if (have_posts()) {
                 while (have_posts()) {
@@ -53,6 +61,8 @@
             } // end if conditional
 
             echo '<div class="clearfix"></div>'; // fix float clear
+
+            get_sidebar();
 
             /*
 

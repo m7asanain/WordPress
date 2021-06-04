@@ -4,6 +4,13 @@
 
 <div class="container home-page">
     <div class="row">
+        <div class="text-center category-information">
+            <h1 class="catergory-title"><?php single_cat_title() ?></h1>
+            <div class="category-description"><?php echo category_description() ?></div>
+            <div class="category-stats">
+                <span>This is a spicial page</span>
+            </div>
+        </div>
         <?php
             if (have_posts()) {
                 while (have_posts()) {
